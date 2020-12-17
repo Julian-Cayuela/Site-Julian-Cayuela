@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang ="fr">
+	<head>
+		<title>MangaWorld</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css/style.css" id="mycss"/>
+		<link rel="icon" href="favicon.ico" />
+		<meta name="description"
+			content="Ici une page pour me contacter et me donner votre avis sur mon site ! N'hésitez pas !">
+		<meta name="author" content="Julian Cayuela">
+		<meta name="keywords" content="manga,passion">
+		<script src="js/script.js">
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<nav>
+			<ul class="menu">
+				<li><a class="active" href="index.html">MangaWorld</a></li>
+				<li><a href="manga_link.html">Manga Link</a></li>
+				<li><a href="recommandations.html">Recommandations</a></li>
+				<li style="float:right"><a href="me_contacter.html">Me Contacter</a></li>
+			</ul>
+		</nav>
+		<div class="formulaire">
+			<h1>Donner moi votre avis sur mon site !</h1>
+			<form class="formulaire-envoie" action="mailto:julian.cayuela03@gmail.com" method="post" enctype="text/plain">
+				<div>
+					<label for="name" class="nom">Nom :<br></label>
+					<input type="text" id="name" name="user_name" required>
+				</div>
+				<div>
+					<label for="firstname">Prénom :<br></label>
+					<input type="text" id="firstname" name="user_firstname" required>
+				</div>
+				<div>
+					<label for="mail" class="mail">E-mail :<br></label>
+					<input type="email" id="mail" name="user_mail" required>
+				</div>
+				<div>
+					<label for="msg">
+						Message :<br>
+					</label>
+					<textarea id="msg" name="user_message" class="msg-box"></textarea>
+				</div>
+				<div class="button">
+					<button type="submit">Envoyer le message</button>
+				</div>
+			</form>
+		</div>
+		<button onclick="switchStyle('style.css/style2.css')">Clic pour changer le style!</button>
+		<button onclick="switchStyle('style.css/style.css')">Clic pour revenir au style de base !</button>
+	</body>
+</html>
